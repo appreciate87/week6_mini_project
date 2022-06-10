@@ -35,18 +35,21 @@ const ContentsWrap = Styled.div`
 
 const H1 = Styled.h1`
     font-size: 50px;
+    font-family: 'DungGeunMo';
 `;
 
 const ID = Styled.p`
     margin-left: -400px;
     font-size: 30px;
     font-weight: bold;
+    font-family: 'DungGeunMo';
 `;
 
 const PW = Styled.p`
     margin-left: -380px;
     font-size: 30px;
     font-weight: bold;
+    font-family: 'DungGeunMo';
 `;
 
 const IdInput = Styled.input`
@@ -55,6 +58,7 @@ const IdInput = Styled.input`
     border-radius: 15px;
     font-size: 20px;
     border-color: #FFFDE7;
+    font-family: 'DungGeunMo';
     
 `;
 const PwInput = Styled.input`
@@ -63,6 +67,7 @@ const PwInput = Styled.input`
     border-radius: 15px;
     font-size: 20px;
     border-color: #FFFDE7;
+    font-family: 'DungGeunMo';
     
 `;
 
@@ -75,10 +80,12 @@ const Button = Styled.div`
     height: 80px;
     background-color: #FDD600;
     border-color: #FDD835;       
-    padding-top: 10px;
+    padding-top: 35px;
     border-radius: 15px;
     font-size: 40px;
+    font-family: 'DungGeunMo';
     margin: auto;
+    box-shadow: 2px 2px 2px 2px gray;
 `;
 
 export default Login;

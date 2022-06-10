@@ -1,9 +1,11 @@
 import React from "react";
 import Styled from "styled-components";
-
+import { useNavigate } from "react-router-dom";
 
 
 const HeaderLogin = () => {
+
+    const navigate = useNavigate();
 
     return (
         <HeaderWrap>
@@ -12,7 +14,9 @@ const HeaderLogin = () => {
                 <Profile>프로필사진</Profile>                
                 <NickName>닉네임</NickName>
                 <PageLogoutWrap>
-                    <MyPage>MY PAGE</MyPage>
+                    <MyPage onClick={()=>{
+                        navigate('/mypage');
+                    }}>MY PAGE</MyPage>
                     <LogOut>LOGOUT</LogOut>
                 </PageLogoutWrap>
             </ContentWrap>            
@@ -31,6 +35,7 @@ const H1 = Styled.h1`
     margin-left: 50px;
     margin-top: -25px;
     font-size: 60px;
+    font-family: 'DungGeunMo';
 `;
 
 const J = Styled.span`
@@ -56,6 +61,7 @@ const Profile = Styled.div`
 const NickName = Styled.h3`
     margin-left: 20px;
     margin-top: 15px;
+    font-family: 'DungGeunMo';
 `;
 
 
@@ -71,6 +77,7 @@ const MyPage = Styled.button`
     font-size: 20px;
     font-weight: bold;
     background-color: #FAFAFA;
+    font-family: 'DungGeunMo';
 
 `;
 
@@ -82,6 +89,7 @@ const LogOut = Styled.button`
     font-size: 20px;
     font-weight: bold;
     background-color: #FDD835;
+    font-family: 'DungGeunMo';
 
 `;
 

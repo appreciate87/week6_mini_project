@@ -32,6 +32,7 @@ const H1 = Styled.h1`
     margin-left: 50px;
     margin-top: -25px;
     font-size: 60px;
+    font-family: 'DungGeunMo';
 `;
 
 const J = Styled.span`
@@ -49,6 +50,7 @@ const Login = Styled.button`
     font-size: 20px;
     font-weight: bold;
     background-color: #FAFAFA;
+    font-family: 'DungGeunMo';
 
 `;
 
@@ -59,6 +61,7 @@ const SignUp = Styled.button`
     margin-left: 15px;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'DungGeunMo';
     background-color: #FDD835;
 
 `;
