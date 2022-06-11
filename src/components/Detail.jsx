@@ -7,47 +7,46 @@ const Detail = () => {
   
   return (
     <>
+    
     <Boxfather>
-    <Boxdown>   
-      <Boxslice>
-      <Box>Title</Box>
-      <Faker/>      
-      </Boxslice>
-      <NewBox>
-        <SpahBox></SpahBox>
-        <Button1>등록</Button1>
-        <Button2>수정</Button2>
-        <Good>👍</Good>
-        <Coment>Coment</Coment>
-        <SpahBox2></SpahBox2>
-        <Button3>등록</Button3>
-        <Button4>수정</Button4>
-        <Button5>삭제</Button5>
-      </NewBox>
-    </Boxdown>
-  </Boxfather>
-  <PostsTitle>posts</PostsTitle>
-  <Posts></Posts>
+      <Boxdown>   
+        <Boxslice>
+        <Box>Title</Box>
+        <Faker/>      
+        </Boxslice>
+        <NewBox>
+          <SpahBox></SpahBox>          
+          <Button2>수정</Button2>
+          <Button4>삭제</Button4>
+          <Good>👍</Good>
+          <Coment>Comment</Coment>
+          <SpahBox2></SpahBox2>
+          <Button3>등록</Button3>          
+        </NewBox>
+      </Boxdown>
+      <Posts></Posts>
+    </Boxfather>
+  
+  
   </>
   
   )
 }
 
 
-
-
-
 const Boxfather = styled.div`
-   display: flex;
+   display: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 80px auto;
 `
 
 const NewBox = styled.div`
   background-color: #FDD600;
   width: 1100px;
   height: 700px;
+  box-shadow: 2px 2px 2px 2px gray;
 `
 
 
@@ -60,6 +59,7 @@ const Box = styled.div`
   font-size: 50px;
   font-family: 'DungGeunMo';
   font-weight: bold;
+  
 `;
 
 const SpahBox = styled.div`
@@ -73,6 +73,7 @@ const SpahBox = styled.div`
   font-size: 40px;
   font-family: 'DungGeunMo';
   position: absolute;
+  
   
 `
 
@@ -88,7 +89,7 @@ const Coment = styled.p`
 const SpahBox2 = styled.input`
   background-color: white;
   margin-top: 500px;
-  margin-left: 80px;
+  margin-left: -30px;
   width: 900px;
   height: 100px;
   border-radius: 30px;
@@ -114,7 +115,7 @@ const Boxslice = styled.div`
 `;
 
 const Faker = styled.div`
-  background-color: white;
+  background-color: #FFFDE7;
   flex: 7;
 `
 const Good = styled.div`
@@ -127,17 +128,9 @@ const Good = styled.div`
   font-size: 25px;
 `
 
-const Button1 = styled.div`
-  margin-left: 850px;
-  margin-top: 360px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'DungGeunMo';
-  position: absolute;
-  
-`
+
 const Button2 = styled.div`
-  margin-left: 920px;
+  margin-left: 860px;
   margin-top: 360px;
   font-size: 20px;
   font-weight: bold;
@@ -147,36 +140,30 @@ const Button2 = styled.div`
 `
 
 const Button3 = styled.div`
-  margin-left: 780px;
+  margin-left: 925px;
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
   font-family: 'DungGeunMo';
   position: absolute;
   
-`
+`;
+
 const Button4 = styled.div`
-  margin-left: 850px;
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'DungGeunMo';
-  position: absolute;
-  
-`
-const Button5 = styled.div`
   margin-left: 920px;
-  margin-top: 10px;
+  margin-top: 360px;
   font-size: 20px;
   font-weight: bold;
   font-family: 'DungGeunMo';
   position: absolute;
-  
-`
+  `;
+
+
+
+
 const Posts = styled.div`
   background-color: #FDD600;
-  margin-top: 100px;
-  margin-left: 400px;
+  margin-top: 100px;  
   width: 1100px;
   height: 550px;
   border-radius: 30px;
@@ -184,16 +171,9 @@ const Posts = styled.div`
   font-size: 40px;
   font-family: 'DungGeunMo';
   position: relative;
+  box-shadow: 2px 2px 2px 2px gray;
   
 `
 
-const PostsTitle = styled.div`
-  margin-top: 40px;
-  margin-left: 410px;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'DungGeunMo';
-  position: absolute;
-`
 
 export default Detail

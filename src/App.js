@@ -14,6 +14,7 @@ import Category from './components/Category';
 import Category2 from './components/Category2';
 import Category3 from './components/Category3';
 import Write from './components/Write';
+import Detail from './components/Detail';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/category/2" element={<Category2/>}/>
           <Route path="/category/3" element={<Category3/>}/>
           <Route path="/write" element={<Write/>}/>
+          <Route path="/detail" element={<Detail/>}/>
         </Routes>      
     </>
     </div>
